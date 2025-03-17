@@ -1,0 +1,21 @@
+.red{
+    color: red;
+    background-color: yellow;
+    text-align: center;/*텍스트 정렬 및 위치 조정정*/
+}
+.border{
+    border: 5px solid black;/*테두리 속성*/
+    border-radius: 10px;/*테두리 모서리 둥글게*/
+}
+
+.img_size{
+    width: 300px;
+    height: 300px;
+}
+.margin-space{  /* margin은 요소의 바깥쪽 여백을 지정하는 속성 */
+    margin-top: 20px;
+}
+
+.padding-space{  /* padding은 요소의 안쪽 여백을 지정하는 속성 */
+    padding-top: 20px;
+} 

@@ -1,0 +1,12 @@
+twice   https://github.com/yubeen777/HTML_CSS.git (fetch)
+twice   https://github.com/yubeen777/HTML_CSS.git (push)
+ 이름은 twice
+
+ $ git remote -v
+origin  https://github.com/yubeen777/JavaScript.git (fetch)
+origin  https://github.com/yubeen777/JavaScript.git (push)
+twice   https://github.com/yubeen777/HTML_CSS.git (fetch)
+twice   https://github.com/yubeen777/HTML_CSS.git (push)
+ 
+ 이렇게 있음
+ 

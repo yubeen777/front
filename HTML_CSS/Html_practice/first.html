@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css" type="text/css">
+   <!-- 복합 선택자
+
+    일치 선택자:두가지 조건을 동시에 만족하는 요소 선택 
+   div.new-style{
+   
+         /*div태그에 new-style클래스
+   
+   }
+   
+   자식선택자
+   div>.new-style{
+   
+    /* div의 자식요소중 class="new-style"선택
+   
+   }
+   
+   후손 선택자
+   div .new-style{
+   
+   /* div 후손요소들 중에서 class="new-style"
+   
+}-->
+</head>
+
+
+
+<body>
+    <h1> 장유빈이란?</h1>
+    <p> 안녕하세요 제 이름은 장유빈 입니다. 열정이 넘치는 청년입니다 지켜보세요~!</p>
+
+    <h2>좋아하는 음식은</h2>
+        <ul>
+            <li>소 또는 돼지 곱창</li>
+            <li>김치 볶음밥밥</li>
+            <li>모든 육류</li>
+          </ul>
+    <h2>좋아하는 가수</h2>
+        <img src="https://img.hankyung.com/photo/202309/AKR20230901035200005_01_i_P4.jpg" class="img_size">
+
+
+    <div class="red border img_size margin-space">NJZ</div>
+    <a href="https://www.youtube.com/watch?v=fY58qaEjTP4">NJZ공연 영상</a>
+
+    <h2>노래 테스트</h2>
+
+    <audio src=".\audio\Hal.mp3" controls></audio> 
+    <!-- <audio controls>
+        <source src="example.mp3" type="audio/mp3">
+        <source src="example.ogg" type="audio/ogg">
+        <source src="example.wav" type="audio/wav">
+        브라우저가 오디오를 지원하지 않습니다.
+      </audio> 
+    
+    
+      <audio>: 오디오 플레이어를 표시하는 태그입니다.
+    <source>: 여러 파일 포맷을 제공하여 브라우저 호환성을 높입니다.
+    type 속성: 오디오 파일의 형식을 명시하여, 브라우저가 올바르게 파일을 처리할 수 있도록 도와줍니다.
+    이 문법을 사용하면 다양한 포맷을 제공하여 브라우저 호환성을 높일 수 있습니다.-->
+
+    <h2> 인적사항 </h2>
+    <table border="2" width="150px">
+        <tr>
+            <th>질문</th><!--글씨가 두껍게 된다 그리고 tr에 같이 쓰면  같은 행에 써진다-->
+            <th>답변</th>
+        </tr>
+        <tr>
+            <td>이름</td>
+            <td>Kevin</td>
+        </tr>
+        <tr>
+            <td>나이</td>
+            <td>24</td>
+        </tr>
+    </table>
+
+    <h2>연락문의</h2>
+
+    <p><input type="text" placeholder="이름을 입력하세요" required><button>전송</button></p>
+
+    <input type="number" placeholder="전화번호를 입력하세요" required><button>전송</button>
+
+
+</body>
+</html>

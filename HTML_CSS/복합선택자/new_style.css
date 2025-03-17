@@ -1,0 +1,96 @@
+.new_style{
+    color: red;
+}
+
+
+/*CSS에 스타일 작성시( . ) 필수 new-size의( - )필수 :~; 필수 { } 필수
+
+HTML에서 여러 스타일 넣고 싶을때
+<img src="~~"/> --------> <img src="~~"(무조건 띄우고)class="~"/>
+sre 클라스 때문에 마지막에 삽입
+ 이런 경우 아니면 <div class="(1조건)띄우고(2조건)띄우고(3조건)>~~</div>
+이렇게 추가하면 됨
+
+
+
+
+
+
+1.class를 이용한 방법 *이 방식은 스타일을 위한 성격이 강해 여러개 스타일을 같이 둘 수 있음*
+한번에 여러개의스타일을 줄수있다. 제일 많이 쓰이는 방법 
+HTML  <div>
+          <p class="new-style">your so cute</p> 
+          </div>
+
+CSS     .new-style{
+          color:red;  
+           }
+
+2.id를 이용한 방법(자바스크립에서 더 이용 됨) *2개 3개씩 스타일 주는게 안됨*
+class 와 사용방식이 비슷하지만 한번에 하나의 스타일만 줄수있음, 주로 자바스크립트에서 많이 쓰이고 스타일링에는 많이 안쓰이는 방식
+HTML  <div>
+          <p id="new-style">your so cute</p> 
+          </div>
+
+CSS     #new-style{
+          color:red;  
+           }
+
+3.태그를 이용한 방법
+어떤 태그에 공통적인 스타일을 주고싶을 때 사용하는 방법
+HTML  <div>
+          <p class="new-style">your so cute</p> 
+          </div>
+
+CSS     p{
+          color:red;  
+           }
+또는 다른 태그 입력 하면 된다 
+*주의*이렇게 하면 모든 p태그에 적용이 된다
+
+4.복합 선택자
+p.new-style{
+color:red;
+   }
+이 의미는 p태그중에 new-style클래스를 가진 태그! 라는 의미다
+****div.new-style{  ******
+      color:red;
+         }                      이 경우는 div에 new-style 클래스가 적용된 곳이 없어 변경 및 적용이 안된다 근데
+
+div .new-style{ 
+      color:red;
+         }              
+
+ div(띄고).new-style를 하면 적용된다 이 의미는 div 태그 아래에 모든 자손들중 스타일이 new-style을 가진 태그만 적용 된다는 의미
+
+
+   자손계념
+  HTML <div>
+           <span><p class="new-style">your so cute</p>
+           </span>
+           </div>
+여기서p는span의 자손이다 하지만 div의 자손이 아닌 후손이다 
+즉 직접적 자손이 아니다 div의 자손이 span이다
+ CSS    div>.new-style{     -------->(.new-style가 아닌 태그,id이여도 상관없음)
+          color:red;  
+             } 
+>이게 있으면 적용이 안된다 그 이유는 >의 의미는  div의 직접적 자식 중에서만 new-style을 가진 경우라는 의미이기 때문 근데 span태그에 new-style 클래스가 없음
+ span>.new-style{color:red:}가 정답
+
+*(in CSS)스타일을 한번 정의해 놓으면 여러곳에 사용이 가능하다*
+
+
+color : 텍스트의 색을 바꿈 
+
+background-color: 배경색을 바꿈
+
+border : 테두리를 그려줌, 3개의 인자를 받음 (두께, 스타일, 색깔)
+
+width / height: 넓이와 높이를 지정하는데 쓰임
+
+text-align : 정렬 (left, center, right)
+
+margin : 내 영역 밖에 공간을 줌 (top, left, right, bottom)
+
+padding: 내 영역 안에서 공간을 줌 (top, left, right, bottom)
+*/
