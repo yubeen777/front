@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 20px; /*  기본 크기 설정 */
+    background-image: url("image/81338991-메모장의-질감입니다-학교-노트북의-배경.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 240, 0.9);
+    min-height: 100vh;
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 36px; /* 제목 크게 */
+  }
+  
+  .input-area {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+  
+  #task-input {
+    flex-grow: 1;
+    padding: 0.5em 1em;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #f0c987;
+  }
+  
+  #add-button {
+    background-color: #ffe194;
+    font-size: 1.5em;
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    border: none;
+    transition: 0.2s;
+  }
+  
+  #add-button:hover {
+    background-color: #f7c59f;
+    transform: scale(1.1);
+  }
+  
+  .task-area {
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+  }
+  
+  .tab-type {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1em;
+    position: relative;
+  }
+  
+  .tab-type div {
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #under-line {
+    height: 4px;
+    background-color: lightpink;
+    position: absolute;
+    width: 60px;
+    left: 0;
+    bottom: 0;
+    transition: 0.4s;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75em 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-done {
+    text-decoration: line-through;
+    color: gray;
+  }
+
+  .task .task-done,
+.task div {
+  font-size: 40px;
+}
+  
+  button {
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 0.3em 0.8em;
+    margin-left: 0.3em;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ffdca8;
+  }
+  
+  .date-text {
+    font-size: 20px;
+    color: gray;
+    margin-top: 0.2em;
+    display: block;
+  }
